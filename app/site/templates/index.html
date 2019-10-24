@@ -2,5 +2,7 @@
 
 {% block title %}Index page{% endblock %}
 {% block content %}
-    Hello world!
+    {% for record in records %}
+        {{ record.text }}
+    {% endfor %}
 {% endblock %}
